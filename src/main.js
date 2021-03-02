@@ -2,7 +2,8 @@ import { createApp } from "vue";
 import { createI18n } from "vue-i18n";
 
 // base components
-import Button from "./components/UI/Button.vue";
+import BaseButton from "./components/UI/BaseButton.vue";
+import BaseCard from "./components/UI/BaseCard.vue";
 
 // components
 import App from "./App.vue";
@@ -26,7 +27,8 @@ const i18n = createI18n({
 
 const app = createApp(App);
 
-app.component("Button", Button);
+app.component("BaseButton", BaseButton);
+app.component("BaseCard", BaseCard);
 
 app.use(i18n);
 app.mount("#app");

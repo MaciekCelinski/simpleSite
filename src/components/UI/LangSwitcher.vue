@@ -34,39 +34,38 @@
 </template>
 
 <script>
-export default {
-	name: "LangSwitcher",
-	data() {
-		return {
-			langs: ["pl", "en"],
-		};
-	},
-};
+	export default {
+		name: "LangSwitcher",
+		data() {
+			return {
+				langs: ["pl", "en"],
+			};
+		},
+	};
 </script>
 
 <style scoped>
-div {
-	height: auto;
-	/* margin-left: auto; */
-	margin: auto 0;
-    display: flex;
-}
-input {
-	display: none;
-}
-label {
-	cursor: pointer;
-    height: 100%;
-    width: 100%;
-    padding-top: 5px;
-}
-label img {
-	height: 100%;
-	min-width: 30px;
-}
-/* @media (max-width: 768px) {
-	img {
-		width: 40px;
+	div {
+		height: auto;
+		margin: auto 10px auto 0;
+		display: flex;
 	}
-} */
+	input {
+		display: none;
+	}
+	label {
+		cursor: pointer;
+		height: 100%;
+		width: 100%;
+		padding-top: 5px;
+	}
+	label img {
+		height: 100%;
+		min-width: 30px;
+	}
+	/* @media (max-width: 768px) {
+		img {
+			width: 40px;
+		}
+	} */
 </style>
