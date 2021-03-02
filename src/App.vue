@@ -1,37 +1,42 @@
 <template>
 	<div id="app">
-		<Header/>
+		<Header />
 		<Intro />
-		<FirstSection/>
+		<Breaker symbol="helmet"/>
+		<FirstSection />
+		<Breaker symbol="hammer"/>
 	</div>
 </template>
 
 <script>
-	import Header from "./components/Layout/Header.vue";
-	import Intro from "./components/Layout/Intro.vue";
-	import FirstSection from "./components/Layout/FirstSection.vue";
+import Header from "./components/Layout/Header.vue";
+import Intro from "./components/Layout/Intro.vue";
+import FirstSection from "./components/FirstSection.vue";
+import Breaker from "./components/Layout/Breaker";
 
-	export default {
-		name: "App",
-		components: {
-			Header,
-			Intro,
-			FirstSection,
-		},
-	};
+// https://freeicons.io/renovation-and-carpentry-icons/hammer-icon-1420
+
+export default {
+	name: "App",
+	components: {
+		Header,
+		Intro,
+		FirstSection,
+		Breaker,
+	},
+};
 </script>
 
 <style>
-	html {
-		margin: 0;
-		padding: 0;
-		background: #fafafa;
-	}
+html {
+	margin: 0;
+	padding: 0;
+	background: #fafafa;
+}
 
-	#app {
-		margin: auto;
-		max-width: 1600px;
-		background: white;
-	}
-
+#app {
+	margin: auto;
+	max-width: 1600px;
+	background: white;
+}
 </style>
