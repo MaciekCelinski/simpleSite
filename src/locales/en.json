@@ -1,24 +1,27 @@
 {
-    "70history": "70 years of operation of the Central Institute for Labor Protection - National Research Institute for employees and employers in Poland",
+    "dietHistory": "The American Heart Association, World Cancer Research Fund, and American Institute for Cancer Research recommend a diet that consists mostly of unprocessed plant foods, with emphasis on a wide range of whole grains, legumes, and non-starchy vegetables and fruits.",
     "aboutUs": "About Us",
-    "bhp": "OSH",
+    "sushi": "Our SUSHI", 
 
-    "bhp1": "Articles in the field of OSH",
-    "bhp2": "Publishing of CIOP-PIB",
-    "bhp3": "Basics of OSH in thematic websites",
-    "bhp4": "Security posters",
-    "bhp5": "Detailed issues discussed in OSH Info",
-    "bhp6": "Ask a question about OSH",
+    "sushi1": "shrimp, teryaki",
+    "sushi2": "melon, sprouts, lettuce",
+    "sushi3": "salmon, tuna, surimi",
+    "sushi4": "calabash, avocado, nori",
+    "sushi5": "salmon, shrimp, caviar",
+    "sushi6": "sesame, cucumber, shrimp",
 
-    "bhpKnowledge": "OSH Knowledge Base",
-    "covidCommunicate": "COMMUNICATION No. 1 (March 19, 2020) (updated 09/09/2020) on testing and conformity assessment of respiratory protective devices, protective clothing and eye and face protection in the context of preventive actions related to the COVID-19 pandemic", 
+
+    "eatMotto": ",,Just as a large country usually means a fairly average level of public education, such a large kitchen usually means quite meager food.’’", 
+    "eatMottoAuthor": "Friedrich Nietzsche",
+
+    "ecoCommunicate": "We can all easily imagine what well-being is. It is a life in good conditions, possibly without stress. This is obviously a very oversimplification, but it contains the gist of the term. In breeding, it is also important that the food is as close to the natural as possible and that the animals are treated well, which every breeder should look after and not only use.",
     "contact": "Contact Us",
     "events": "Events",
     "learnMore": "Learn more",
-    "news": "NEWS",
+    "news": "Main Dishes",
     "onlineTools": "Online Tools",
     "search": "Search",
     "services": "Services",
-    "workMotto": "I never remember feeling tired by work, though idleness exhausts me completely.",
+    "workMotto": ",,I never remember feeling tired by work, though idleness exhausts me completely.’’",
     "workMottoAuthor": "Arthur Conan Doyle (Sherlock Holmes)"
 }

@@ -1,18 +1,18 @@
 <template>
 	<div id="secondSection">
-		<base-banner>{{ $t("bhpKnowledge") }}</base-banner>
+		<base-banner>{{ $t("sushi") }}</base-banner>
 		<div id="secondContent">
-			<div id="bhpThemes">
+			<div id="types">
 				<base-card
-					v-for="theme in themes"
-					:key="theme"
-					:image="theme"
-					:text="$t(`bhp${theme}`)"
-					folder="bhp"
+					v-for="sushi in sushis"
+					:key="sushi"
+					:image="sushi"
+					:text="$t(`sushi${sushi}`)"
+					folder="sushi"
 				></base-card>
 			</div>
-			<div id="bhpPic">
-				<img id="bhpLogo" src="../assets/BHP_logo2.jpg" alt="" />
+			<div id="onePic">
+				<img id="chefLogo" src="../assets/chef.svg" alt="" />
 			</div>
 		</div>
 	</div>
@@ -22,21 +22,23 @@
 	export default {
 		data() {
 			return {
-				themes: [1, 2, 3, 4, 5, 6],
+				sushis: [1, 2, 3, 4, 5, 6],
 			};
 		},
 		mounted() {
 			window.addEventListener("scroll", this.onScroll);
 		},
-		beforeUnmount() {
-			window.removeEventListener("scroll", this.onScroll);
-		},
+		// beforeUnmount() {
+		// 	window.removeEventListener("scroll", this.onScroll);
+		// },
 		methods: {
 			onScroll(e) {
-				if (e.target.documentElement.scrollTop > 990) {
-					document.getElementById("bhpLogo").classList.add("onStage");
+				if (e.target.documentElement.scrollTop > 1000) {
+					document.getElementById("chefLogo").classList = "onStage";
+					console.log(e.target.documentElement.scrollTop)
 				} else {
-					document.getElementById("bhpLogo").classList.add("offStage");
+					document.getElementById("chefLogo").classList ="offStage";
+					
 				}
 			},
 		},
@@ -54,7 +56,7 @@
 		grid-template-columns: 1.2fr 0.8fr;
 	}
 
-	#bhpThemes {
+	#types {
 		display: grid;
 		margin: 20px 80px;
 		gap: 10px 0px;
@@ -64,14 +66,14 @@
 		align-items: center;
 	}
 
-	#bhpPic {
+	#onePic {
 		display: flex;
 		justify-items: center;
 		align-items: center;
 	}
 
-	#bhpLogo {
-		max-width: 60%;
+	#chefLogo {
+		max-width: 50%;
 		margin: auto;
 	}
 

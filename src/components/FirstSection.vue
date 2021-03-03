@@ -7,7 +7,7 @@
 					<img
 						id="arrow-left"
 						class="arrow"
-						src="../assets/arrow-left.png"
+						src="../assets/arrow.png"
 						alt=""
 						@click="slide"
 					/>
@@ -16,7 +16,7 @@
 					<img
 						id="arrow-right"
 						class="arrow"
-						src="../assets/arrow-right.png"
+						src="../assets/arrow.png"
 						alt=""
 						@click="slide"
 					/>
@@ -69,7 +69,7 @@ export default {
 <style scoped>
 #firstSection {
 	background: white;
-	margin: 20px 0;
+	padding: 0 0 60px 0;
 }
 #firstContent {
 	margin: 0 20px;
@@ -136,7 +136,7 @@ export default {
 }
 
 #arrow-right {
-	transform: translate(0, 70px);
+	transform: translate(0, 70px) scale(-1,1);
 	right: 0.5%;
 }
 </style>

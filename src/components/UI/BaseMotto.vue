@@ -1,7 +1,7 @@
 <template>
 	<div id="mottoDiv">
 		<p id="motto">
-			<l>"{{ motto }}"</l>
+			<l>{{ motto }}</l>
 		</p>
 		<h4>{{ mottoAuthor }}</h4>
 	</div>
@@ -16,7 +16,9 @@
 <style scoped>
 	#mottoDiv {
 		text-align: center;
-		margin: 50px 0;
+		padding: 50px 0;
+		background: rgb(243, 243, 243);
+		color:rgb(148, 4, 136);
 
 	}
 	#motto {
@@ -26,6 +28,6 @@
 	}
 
     h4 {
-        font-weight: 400;
+        font-weight: 600;
     }
 </style>

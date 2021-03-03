@@ -19,10 +19,10 @@ export default {
 #breaker {
 	display: block;
 	text-align: center;
-	margin: 60px 0 20px 0;
+	margin: 20px 0;
 }
 
 #breaker img {
-	height: 30px;
+	height: 50px;
 }
 </style>

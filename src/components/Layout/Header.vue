@@ -2,7 +2,7 @@
 	<header>
 		<div id="left-panel">
 			<a class="logo" href="#">
-				<img src="../../assets/ciop-logo.png" alt="" />
+				<img src="../../assets/smallLogo.png" alt="" />
 			</a>
 			<!-- <ul>
 				<li>
@@ -75,7 +75,7 @@
 	header #left-panel .logo img {
 		max-width: 100%;
 		margin: auto;
-		max-height: 30px;
+		max-height: 40px;
 	}
 
 	/* header #left-panel ul {

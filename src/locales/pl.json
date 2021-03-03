@@ -1,24 +1,27 @@
 {    
-    "70history": "70 lat działalności Centralnego Instytut Ochrony Pracy – Państwowego Instytut Badawczego na rzecz pracowników i pracodawców w Polsce",
+    "dietHistory": "American Heart Association, World Cancer Research Fund i American Institute for Cancer Research zalecają dietę składającą się głównie z nieprzetworzonej żywności roślinnej, z naciskiem na szeroką gamę produktów pełnoziarnistych, roślin strączkowych oraz nieskrobiowych warzyw i owoców.",
     "aboutUs": "O Instytucie",
-    "bhp": "BHP", 
+    "sushi": "Nasze SUSHI", 
 
-    "bhp1": "Artykuły do pobrania z zakresu BHP",
-    "bhp2": "Wydawnictwa CIOP-PIB",
-    "bhp3": "Podstawy BHP w serwisach tematycznych",
-    "bhp4": "Plakaty o tematyce bezpieczeństwa",
-    "bhp5": "Szczegółowe problemy omówione w BHP Info",
-    "bhp6": "Zadaj pytanie dotyczące BHP",
+    "sushi1": "krewetka, teriaki",
+    "sushi2": "melon, kiełki, sałata",
+    "sushi3": "łosoś, tuńczyk, surimi",
+    "sushi4": "tykwa, awocado, nori",
+    "sushi5": "łosoś, krewetka, kawior",
+    "sushi6": "sezam, ogórek, krewetka",
 
     "bhpKnowledge": "Baza wiedzy BHP",
-    "covidCommunicate": "KOMUNIKAT nr 1 (19 marca 2020) (aktualizacja 11.09.2020) w sprawie badania i oceny zgodności środków ochrony dróg oddechowych, odzieży ochronnej oraz środków ochrony oczu i twarzy w kontekście działań prewencyjnych związanych z pandemią COVID-19", 
+    "eatMotto": ",,Tak jak duży kraj oznacza zwykle dość przeciętny poziom oświaty publicznej, tak duża kuchnia oznacza zwykle dość mizerne jedzenie.’’", 
+    "eatMottoAuthor": "Fryderyk Nietzsche",
+
+    "ecoCommunicate": "Czym jest dobrostan każdy z nas może sobie łatwo wyobrazić. Jest to życie w dobrych warunkach, w miarę możliwości bez stresu. Jest to oczywiście bardzo duże uproszczenie ale zawiera sedno tego określenia. W hodowli ważne jest także jak najbardziej zbliżone do naturalnego pożywienie oraz dobre traktowanie zwierząt, którymi każdy hodowca powinien się opiekować a nie tylko wykorzystywać.",
     "contact": "Kontakt",
     "events": "Wydarzenia",
     "learnMore": "Dowiedz się więcej",
-    "news": "AKTUALNOŚCI",
+    "news": "Dania Główne",
     "onlineTools": "Narzędzia online",
     "search": "Wyszukaj",
     "services": "Serwisy",
-    "workMotto": "Praca nigdy mnie nie męczy, zaś bezczynność wyczerpuje mnie bezgranicznie.",
+    "workMotto": ",,Praca nigdy mnie nie męczy, zaś bezczynność wyczerpuje mnie bezgranicznie.’’",
     "workMottoAuthor": "Artur Conan Doyle (Sherlock Holmes)"
 }
