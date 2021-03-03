@@ -1,6 +1,6 @@
 <template>
 	<div id="thirdSection">
-		<base-banner>COVID-19</base-banner>
+		<base-banner>{{ $t("ecoFarming") }}</base-banner>
 		<div id="thirdContent">
 			<p id="communicate">{{ $t("ecoCommunicate") }}</p>
 			<!-- <div></div> -->

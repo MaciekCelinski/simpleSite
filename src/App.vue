@@ -5,19 +5,19 @@
 		<Intro />
 		<base-breaker symbol="hat" />
 		<first-section />
-		<base-breaker symbol="cow" />
+		<base-breaker symbol="vege" />
 		<base-motto
 			:motto="$t('workMotto')"
 			:mottoAuthor="$t('workMottoAuthor')"
 		/>
 		<base-breaker symbol="sushi" />
 		<second-section />
-		<base-breaker symbol="drink" />
+		<base-breaker symbol="grill" />
 		<base-motto
 			:motto="$t('eatMotto')"
 			:mottoAuthor="$t('eatMottoAuthor')"
 		/>
-		<base-breaker symbol="grill" />
+		<base-breaker symbol="cow" />
 		<third-section />
 		<base-breaker symbol="paw" />
 		<Footer />
