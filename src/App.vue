@@ -19,6 +19,7 @@
 		/>
 		<base-breaker symbol="grill" />
 		<third-section />
+		<base-breaker symbol="paw" />
 		<Footer />
 	</div>
 </template>
