@@ -2,10 +2,22 @@
     "70history": "70 years of operation of the Central Institute for Labor Protection - National Research Institute for employees and employers in Poland",
     "aboutUs": "About Us",
     "bhp": "OSH",
+
+    "bhp1": "Articles in the field of OSH",
+    "bhp2": "Publishing of CIOP-PIB",
+    "bhp3": "Basics of OSH in thematic websites",
+    "bhp4": "Security posters",
+    "bhp5": "Detailed issues discussed in OSH Info",
+    "bhp6": "Ask a question about OSH",
+
+    "bhpKnowledge": "OSH Knowledge Base",
     "contact": "Contact Us",
     "events": "Events",
     "learnMore": "Learn more",
     "news": "NEWS",
     "onlineTools": "Online Tools",
-    "services": "Services"
+    "search": "Search",
+    "services": "Services",
+    "workMotto": "I never remember feeling tired by work, though idleness exhausts me completely.",
+    "workMottoAuthor": "Arthur Conan Doyle (Sherlock Holmes)"
 }

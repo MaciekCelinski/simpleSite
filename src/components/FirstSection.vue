@@ -1,7 +1,7 @@
 <template>
 	<div id="firstSection">
 		<div id="firstContent">
-			<h1>{{ $t("news") }}</h1>
+			<base-banner>{{ $t("news") }}</base-banner>
 			<div id="content">
 				<div id="arrows">
 					<img
@@ -24,7 +24,7 @@
 				<transition appear name="slide">
 					<div id="carousel">
 						<div v-for="pic in pics" :key="pic">
-							<base-card :image="pic"></base-card>
+							<base-card :image="pic" folder="news"></base-card>
 						</div>
 					</div>
 				</transition>
@@ -109,11 +109,11 @@ export default {
 		transition: all 5s;
 	} */
 
-h1 {
+/* h1 {
 	border-bottom: 1px solid lightgray;
 	display: inline-block;
 	margin: 30px 0 60px 0;
-}
+} */
 
 #arrows {
 	display: flex;

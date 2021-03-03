@@ -26,15 +26,27 @@
 			</ul> -->
 		</div>
 		<div id="right-panel">
+			<form id="searchForm">
+				<input
+					id="searchInput"
+					type="text"
+					:placeholder="$t('search')"					
+					name="search"
+				/>
+				<base-button type="submit"
+					><img id="searchIcon" src="../../assets/search.png" alt=""
+				/></base-button>
+			</form>
 			<lang-switcher />
 		</div>
 	</header>
 </template>
 
 <script>
+	import BaseButton from "../UI/BaseButton.vue";
 	import LangSwitcher from "../UI/LangSwitcher.vue";
 	export default {
-		components: { LangSwitcher },
+		components: { LangSwitcher, BaseButton },
 	};
 </script>
 
@@ -42,12 +54,12 @@
 	header {
 		height: 60px;
 		display: flex;
-		margin: auto 10px;
-		/* border-bottom: 1px solid rgba(0, 0, 0, 0.12); */
-		/* position: fixed;
-					width: 100%;
-					max-width: 1580px;
-					background: white; */
+		margin: auto;
+		/* border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+		position: fixed;
+							width: 100%;
+							max-width: 1600px;
+							background: white; */
 	}
 
 	header #left-panel {
@@ -67,18 +79,18 @@
 	}
 
 	/* header #left-panel ul {
-		display: flex;
-		list-style-type: none;
-	}
+				display: flex;
+				list-style-type: none;
+			}
 
-	header #left-panel ul li {
-		padding: 3px 10px;
-		border-right: 1px solid lightgray;
-	}
+			header #left-panel ul li {
+				padding: 3px 10px;
+				border-right: 1px solid lightgray;
+			}
 
-	header #left-panel ul li:last-child {
-		border-right: none;
-	} */
+			header #left-panel ul li:last-child {
+				border-right: none;
+			} */
 
 	header #right-panel {
 		display: flex;
@@ -89,11 +101,12 @@
 		background-color: white;
 		border: none;
 		border-bottom: 1px solid white;
-		min-width: 135px;
-		font-family: "Lato";
-		font-size: 16px;
-		cursor: pointer;
-		opacity: 80%;
+		height: 30px;
+		/* min-width: 135px;
+			font-family: "Lato";
+			font-size: 16px;
+			cursor: pointer;
+			opacity: 80%; */
 		/* transition: border-bottom 0.2s linear; */
 	}
 
@@ -102,6 +115,29 @@
 	.btn:focus {
 		outline: none;
 		font-weight: 600;
+	}
+
+	#searchForm {
+		padding: 5px 30px 0 0;
+		display: flex;
+	}
+
+	#searchInput {
+		height: 30px;
+		border: none;
+		border-bottom: 1px solid lightgray;
+	}
+
+	#searchInput:hover,
+	#searchInput:active,
+	#searchInput:focus {
+		outline: none;
+		font-weight: 600;
+	}
+
+	#searchIcon {
+		width: 25px;
+		padding: 5px
 	}
 
 	@media (max-width: 768px) {

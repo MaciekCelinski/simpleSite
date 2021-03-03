@@ -1,11 +1,23 @@
 {    
     "70history": "70 lat działalności Centralnego Instytut Ochrony Pracy – Państwowego Instytut Badawczego na rzecz pracowników i pracodawców w Polsce",
     "aboutUs": "O Instytucie",
-    "bhp": "BHP",
+    "bhp": "BHP", 
+
+    "bhp1": "Artykuły do pobrania z zakresu BHP",
+    "bhp2": "Wydawnictwa CIOP-PIB",
+    "bhp3": "Podstawy BHP w serwisach tematycznych",
+    "bhp4": "Plakaty o tematyce bezpieczeństwa",
+    "bhp5": "Szczegółowe problemy omówione w BHP Info",
+    "bhp6": "Zadaj pytanie dotyczące BHP",
+
+    "bhpKnowledge": "Baza wiedzy BHP",
     "contact": "Kontakt",
     "events": "Wydarzenia",
     "learnMore": "Dowiedz się więcej",
     "news": "AKTUALNOŚCI",
     "onlineTools": "Narzędzia online",
-    "services": "Serwisy"
+    "search": "Wyszukaj",
+    "services": "Serwisy",
+    "workMotto": "Praca nigdy mnie nie męczy, zaś bezczynność wyczerpuje mnie bezgranicznie.",
+    "workMottoAuthor": "Artur Conan Doyle (Sherlock Holmes)"
 }

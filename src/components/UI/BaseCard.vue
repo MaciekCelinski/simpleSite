@@ -5,17 +5,18 @@
 			<!-- <div id="slot">
 				<slot></slot>
 			</div> -->
+			<p v-if="text">{{ text }}</p>
 		</div>
 	</div>
 </template>
 
 <script>
 	export default {
-		props: ["image"],
+		props: ["image", "folder", "text"],
 		computed: {
 			picture() {
 				console.log("this.image: ", this.image);
-				return require(`../../assets/news/${this.image}.jpg`);
+				return require(`../../assets/${this.folder}/${this.image}.jpg`);
 			},
 		},
 	};
@@ -29,10 +30,13 @@
 		margin-right: 10px;
 		opacity: 0.6;
 		transition: opacity 0.25s ease;
+		
 	}
 
 	#card:hover {
 		opacity: 1;
+		transform: scale(1.01);
+		transition: all 0.2s ease;
 	}
 
 	#card-container {
@@ -42,13 +46,28 @@
 		overflow: hidden;
 	}
 	/* #slot {
-						font-size: 24px;
-						font-weight: 600;
-						position: absolute;
-						top: 40%;
-						left: 20%;
-								} */
+													font-size: 24px;
+													font-weight: 600;
+													position: absolute;
+													top: 40%;
+													left: 20%;
+															} */
 	img {
 		height: 200px;
+		width: 100%;
+	}
+
+	p {
+		color: white;
+		position: absolute;
+		width: 200px;
+		top: 150px;
+		margin: auto;
+		font-weight: 600;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		z-index: 2;
 	}
 </style>
