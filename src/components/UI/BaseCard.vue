@@ -12,7 +12,6 @@
 		props: ["image", "folder", "text"],
 		computed: {
 			picture() {
-				console.log("this.image: ", this.image);
 				return require(`../../assets/${this.folder}/${this.image}.jpg`);
 			},
 		},

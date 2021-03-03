@@ -45,10 +45,8 @@
 			onScroll(e) {
 				if (
 					e.target.documentElement.scrollTop > 100
-					// && e.target.documentElement.scrollTop < 400
 				) {
 					document.getElementById("upButton").style.display = "block";
-					// console.log({ top: this.windowTop });
 				} else {
 					document.getElementById("upButton").style.display = "none";
 				}

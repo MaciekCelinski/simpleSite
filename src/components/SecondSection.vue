@@ -1,7 +1,6 @@
 <template>
 	<div id="secondSection">
 		<base-banner>{{ $t("bhpKnowledge") }}</base-banner>
-		<!-- <span style="position: fixed">windowTop: {{ windowTop }}</span> -->
 		<div id="secondContent">
 			<div id="bhpThemes">
 				<base-card
@@ -13,14 +12,7 @@
 				></base-card>
 			</div>
 			<div id="bhpPic">
-				<!-- <transition name="bhpLogo"> -->
-				<img
-					id="bhpLogo"
-					:class="[windowTop < '1000' ? 'offStage' : 'onStage']"
-					src="../assets/BHP_logo2.jpg"
-					alt=""
-				/>
-				<!-- </transition> -->
+				<img id="bhpLogo" src="../assets/BHP_logo2.jpg" alt="" />
 			</div>
 		</div>
 	</div>
@@ -31,7 +23,6 @@
 		data() {
 			return {
 				themes: [1, 2, 3, 4, 5, 6],
-				windowTop: 0,
 			};
 		},
 		mounted() {
@@ -42,12 +33,10 @@
 		},
 		methods: {
 			onScroll(e) {
-				if (
-					e.target.documentElement.scrollTop > 990 &&
-					e.target.documentElement.scrollTop < 1150
-				) {
-					this.windowTop = e.target.documentElement.scrollTop;
-					console.log({ top: this.windowTop });
+				if (e.target.documentElement.scrollTop > 990) {
+					document.getElementById("bhpLogo").classList.add("onStage");
+				} else {
+					document.getElementById("bhpLogo").classList.add("offStage");
 				}
 			},
 		},
@@ -76,14 +65,14 @@
 	}
 
 	#bhpPic {
-        display: flex;
+		display: flex;
 		justify-items: center;
 		align-items: center;
 	}
 
 	#bhpLogo {
 		max-width: 60%;
-        margin: auto;
+		margin: auto;
 	}
 
 	.offStage {
