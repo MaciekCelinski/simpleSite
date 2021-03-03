@@ -17,7 +17,7 @@
 				<img
 					id="bhpLogo"
 					:class="[windowTop < '1000' ? 'offStage' : 'onStage']"
-					src="../assets/BHP_logo2.png"
+					src="../assets/BHP_logo2.jpg"
 					alt=""
 				/>
 				<!-- </transition> -->
@@ -37,9 +37,9 @@
 		mounted() {
 			window.addEventListener("scroll", this.onScroll);
 		},
-		// beforeUnmount() {
-		// 	window.removeEventListener("scroll", this.onScroll);
-		// },
+		beforeUnmount() {
+			window.removeEventListener("scroll", this.onScroll);
+		},
 		methods: {
 			onScroll(e) {
 				if (
