@@ -2,9 +2,6 @@
 	<div id="card">
 		<div id="card-container">
 			<img :src="picture" alt="" />
-			<!-- <div id="slot">
-				<slot></slot>
-			</div> -->
 			<p v-if="text">{{ text }}</p>
 		</div>
 	</div>
@@ -45,13 +42,7 @@
 		align-items: center;
 		overflow: hidden;
 	}
-	/* #slot {
-													font-size: 24px;
-													font-weight: 600;
-													position: absolute;
-													top: 40%;
-													left: 20%;
-															} */
+
 	img {
 		height: 200px;
 		width: 100%;

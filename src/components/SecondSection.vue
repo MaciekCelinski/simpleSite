@@ -1,7 +1,7 @@
 <template>
 	<div id="secondSection">
 		<base-banner>{{ $t("bhpKnowledge") }}</base-banner>
-		<span style="position: fixed">windowTop: {{ windowTop }}</span>
+		<!-- <span style="position: fixed">windowTop: {{ windowTop }}</span> -->
 		<div id="secondContent">
 			<div id="bhpThemes">
 				<base-card
