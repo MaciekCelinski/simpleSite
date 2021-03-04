@@ -4,26 +4,36 @@
 			<base-banner>{{ $t("news") }}</base-banner>
 			<div id="content">
 				<div id="arrows">
-					<img
-						id="arrow-left"
-						class="arrow"
-						src="../assets/arrow.png"
-						alt=""
-						@click="slide"
-					/>
-				</div>
-				<div>
-					<img
-						id="arrow-right"
-						class="arrow"
-						src="../assets/arrow.png"
-						alt=""
-						@click="slide"
-					/>
+					<div>
+						<img
+							id="arrow-left"
+							class="arrow"
+							src="../assets/arrow.png"
+							alt=""
+							@click="slide"
+						/>
+					</div>
+
+					<div>
+						<img
+							id="arrow-right"
+							class="arrow"
+							src="../assets/arrow.png"
+							alt=""
+							@click="slide"
+						/>
+					</div>
 				</div>
 				<transition appear name="slide">
 					<div id="carousel">
-						<div v-for="pic in pics" :key="pic">
+						<div
+							class="singleCard"
+							:class="[
+								pic === selectedPic ? 'active' : 'notActive',
+							]"
+							v-for="pic in pics"
+							:key="pic"
+						>
 							<base-card :image="pic" folder="news"></base-card>
 						</div>
 					</div>
@@ -40,26 +50,32 @@ export default {
 	data() {
 		return {
 			pics: [1, 2, 3, 4, 5, 6, 7, 8],
+			selectedPic: 3,
 		};
 	},
 	methods: {
 		slide(e) {
-			// console.log("e: ", e);
-			if (e.srcElement.id.includes("right")) {
-				// console.log(
-				// 	"translate: ",
-				// 	document.getElementById("carousel").style
-				// );
-
-				document.getElementById("carousel").style.transition =
-					"all 2s ease-in-out";
-				document.getElementById("carousel").style.transform =
-					"translateX(-450px)";
+			if (screen.width > 768) {
+				if (e.srcElement.id.includes("right")) {
+					document.getElementById("carousel").style.transition =
+						"all 2s ease-in-out";
+					document.getElementById("carousel").style.transform =
+						"translateX(-450px)";
+				} else {
+					document.getElementById("carousel").style.transition =
+						"all 2s ease-in-out";
+					document.getElementById("carousel").style.transform =
+						"translateX(0)";
+				}
 			} else {
-				document.getElementById("carousel").style.transition =
-					"all 2s ease-in-out";
 				document.getElementById("carousel").style.transform =
 					"translateX(0)";
+				if (e.srcElement.id.includes("right") && this.selectedPic < 8) {
+					this.selectedPic += 1;
+				}
+				if (e.srcElement.id.includes("left") && this.selectedPic > 1) {
+					this.selectedPic -= 1;
+				}
 			}
 		},
 	},
@@ -84,36 +100,8 @@ export default {
 
 #carousel {
 	display: flex;
-	/* position: absolute; */
 	position: relative;
-	/* overflow: scroll; */
 }
-/* 
-.slide-enter-from {
-	transform: translateX(-450px);
-}
-.slide-enter-to {
-	transform: translateX(0);
-}
-.slide-enter-active {
-	transition: all 1s ease-in-out;
-} */
-
-/* .slide-leave-from {
-		transform: translateX(0);
-	}
-	.slide-leave-to {
-		transform: translateX(-450px);
-	}
-	.slide-leave-active {
-		transition: all 5s;
-	} */
-
-/* h1 {
-	border-bottom: 1px solid lightgray;
-	display: inline-block;
-	margin: 30px 0 60px 0;
-} */
 
 #arrows {
 	display: flex;
@@ -136,7 +124,28 @@ export default {
 }
 
 #arrow-right {
-	transform: translate(0, 70px) scale(-1,1);
+	transform: translate(0, 70px) scale(-1, 1);
 	right: 0.5%;
+}
+
+@media (max-width: 768px) {
+	/* #arrows {
+		display: none;
+	} */
+	#carousel {
+		display: flex;
+		flex-direction: row;
+		margin: auto;
+		align-self: center;
+	}
+	.singleCard {
+		margin: auto;
+	}
+	.active {
+		display: block;
+	}
+	.notActive {
+		display: none;
+	}
 }
 </style>

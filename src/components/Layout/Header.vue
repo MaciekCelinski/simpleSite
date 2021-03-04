@@ -30,7 +30,7 @@
 				<input
 					id="searchInput"
 					type="text"
-					:placeholder="$t('search')"					
+					:placeholder="$t('search')"
 					name="search"
 				/>
 				<base-button type="submit"
@@ -43,42 +43,42 @@
 </template>
 
 <script>
-	import BaseButton from "../UI/BaseButton.vue";
-	import LangSwitcher from "../UI/LangSwitcher.vue";
-	export default {
-		components: { LangSwitcher, BaseButton },
-	};
+import BaseButton from "../UI/BaseButton.vue";
+import LangSwitcher from "../UI/LangSwitcher.vue";
+export default {
+	components: { LangSwitcher, BaseButton },
+};
 </script>
 
 <style scoped>
-	header {
-		height: 60px;
-		display: flex;
-		margin: auto;
-		/* border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+header {
+	height: 60px;
+	display: flex;
+	margin: auto;
+	/* border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 		position: fixed;
 							width: 100%;
 							max-width: 1600px;
 							background: white; */
-	}
+}
 
-	header #left-panel {
-		margin: auto 0;
-		display: flex;
-	}
+header #left-panel {
+	margin: auto 0;
+	display: flex;
+}
 
-	header #left-panel .logo {
-		width: 15rem;
-		display: flex;
-	}
+header #left-panel .logo {
+	width: 15rem;
+	display: flex;
+}
 
-	header #left-panel .logo img {
-		max-width: 100%;
-		margin: auto;
-		max-height: 40px;
-	}
+header #left-panel .logo img {
+	max-width: 100%;
+	margin: auto;
+	max-height: 40px;
+}
 
-	/* header #left-panel ul {
+/* header #left-panel ul {
 				display: flex;
 				list-style-type: none;
 			}
@@ -92,57 +92,60 @@
 				border-right: none;
 			} */
 
-	header #right-panel {
-		display: flex;
-		margin: auto 10px auto auto;
-	}
+header #right-panel {
+	display: flex;
+	margin: auto 10px auto auto;
+}
 
-	.btn {
-		background-color: white;
-		border: none;
-		border-bottom: 1px solid white;
-		height: 30px;
-		/* min-width: 135px;
+.btn {
+	background-color: white;
+	border: none;
+	border-bottom: 1px solid white;
+	height: 30px;
+	/* min-width: 135px;
 			font-family: "Lato";
 			font-size: 16px;
 			cursor: pointer;
 			opacity: 80%; */
-		/* transition: border-bottom 0.2s linear; */
-	}
+	/* transition: border-bottom 0.2s linear; */
+}
 
-	.btn:hover,
-	.btn:active,
-	.btn:focus {
-		outline: none;
-		font-weight: 600;
-	}
+.btn:hover,
+.btn:active,
+.btn:focus {
+	outline: none;
+	font-weight: 600;
+}
 
+#searchForm {
+	padding: 5px 30px 0 0;
+	display: flex;
+}
+
+#searchInput {
+	height: 30px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+}
+
+#searchInput:hover,
+#searchInput:active,
+#searchInput:focus {
+	outline: none;
+	font-weight: 600;
+}
+
+#searchIcon {
+	width: 25px;
+	padding: 5px;
+}
+
+@media (max-width: 768px) {
+	.logo {
+		width: 10rem;
+	}
 	#searchForm {
-		padding: 5px 30px 0 0;
-		display: flex;
+		display: none;
 	}
-
-	#searchInput {
-		height: 30px;
-		border: none;
-		border-bottom: 1px solid lightgray;
-	}
-
-	#searchInput:hover,
-	#searchInput:active,
-	#searchInput:focus {
-		outline: none;
-		font-weight: 600;
-	}
-
-	#searchIcon {
-		width: 25px;
-		padding: 5px
-	}
-
-	@media (max-width: 768px) {
-		.logo {
-			width: 10rem;
-		}
-	}
+}
 </style>
