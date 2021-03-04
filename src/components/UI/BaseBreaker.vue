@@ -25,4 +25,27 @@ export default {
 #breaker img {
 	height: 50px;
 }
+
+#breaker img:hover {
+	animation: jump 1s forwards ease-in-out;
+
+}
+
+@keyframes jump {
+	0% {
+		transform: translateY(-0px);
+	}
+	25% {
+		transform: translateY(-10px);
+	}
+		50% {
+		transform: translateY(0px);
+	}
+		75% {
+		transform: translateY(-10px);
+	}
+		100% {
+		transform: translateY(0px);
+	}
+}
 </style>

@@ -7,12 +7,12 @@ import BaseBreaker from "./components/UI/BaseBreaker.vue";
 import BaseButton from "./components/UI/BaseButton.vue";
 import BaseCard from "./components/UI/BaseCard.vue";
 import BaseMotto from "./components/UI/BaseMotto.vue";
+import BaseModal from "./components/UI/BaseModal.vue";
 
 // components
 import App from "./App.vue";
 
 // directives
-
 
 // languages
 import en from "./locales/en.json";
@@ -38,7 +38,7 @@ app.component("BaseBreaker", BaseBreaker);
 app.component("BaseButton", BaseButton);
 app.component("BaseCard", BaseCard);
 app.component("BaseMotto", BaseMotto);
-
+app.component("BaseModal", BaseModal);
 
 app.use(i18n);
 app.mount("#app");
