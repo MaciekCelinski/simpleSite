@@ -66,4 +66,19 @@
 	#modal {
 		display: block;
 	}
+
+	@media (max-width: 768px) {
+		#overflow {
+			display: flex;
+			flex-direction: column;
+		}
+		#modal {
+			margin-top: 30%;
+		}
+		#closeTag {
+			color: whitesmoke;
+			border: none;
+			transform: translateY(0px);
+		}
+	}
 </style>
