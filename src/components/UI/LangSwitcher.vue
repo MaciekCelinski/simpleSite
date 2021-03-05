@@ -60,12 +60,15 @@
 		padding-top: 5px;
 	}
 	label img {
-		height: 100%;
-		min-width: 30px;
+		height: 40px;
+		max-width: 50px;
+		transform: scale(1, -1);
+		border: 1px solid lightgray;
+		border-radius: 10%;
 	}
 	/* @media (max-width: 768px) {
-		img {
-			width: 40px;
-		}
-	} */
+			img {
+				width: 40px;
+			}
+		} */
 </style>
