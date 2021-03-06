@@ -61,6 +61,7 @@
 		color: whitesmoke;
 		border: none;
 		transform: translateY(-200px);
+		margin: 0 50%;
 	}
 
 	#modal {

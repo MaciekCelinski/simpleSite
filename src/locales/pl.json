@@ -1,7 +1,9 @@
 {    
     "dietHistory": "American Heart Association, World Cancer Research Fund i American Institute for Cancer Research zalecają dietę składającą się głównie z nieprzetworzonej żywności roślinnej, z naciskiem na szeroką gamę produktów pełnoziarnistych, roślin strączkowych oraz nieskrobiowych warzyw i owoców.",
     "aboutUs": "O Instytucie",
-    "contactUs": "Kontakt",
+    "contactForm": "formularz kontaktowy",
+    "contactUs": "Skontaktuj się z nami",
+
     "sushi": "Nasze SUSHI", 
 
     "sushi1": "krewetka, teriaki",
@@ -18,9 +20,20 @@
     "ecoFarming" : "Hodowla zgodna z naturą",
 
     "ecoCommunicate": "Czym jest dobrostan każdy z nas może sobie łatwo wyobrazić. Jest to życie w dobrych warunkach, w miarę możliwości bez stresu. Jest to oczywiście bardzo duże uproszczenie ale zawiera sedno tego określenia. W hodowli ważne jest także jak najbardziej zbliżone do naturalnego pożywienie oraz dobre traktowanie zwierząt, którymi każdy hodowca powinien się opiekować a nie tylko wykorzystywać.",
+    
+    "email": "Email",
+
+    "errorNameField": "Pole imię nie może być puste. Proszę dodać imię.",
+    "errorEmailField": "Proszę dodać poprawny adres email",
+    "errorMessageField": "Pole wiadomości nie może być puste. Proszę dodać wiadomość.",
+    
     "contact": "Kontakt",
     "events": "Wydarzenia",
+    "followUs": "Obserwuj nas",
     "learnMore": "Dowiedz się więcej",
+    "message": "Wiadomość",
+    "name": "Imię",
+    "noEmail": "Ta aplikacja nie wysyła jeszcze maili, swoją wiadomość możesz odczytać w konsoli :) Pozdrawiam Maciek C.",
     "news": "Dania Główne",
     "onlineTools": "Narzędzia online",
     "search": "Wyszukaj",

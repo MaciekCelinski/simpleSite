@@ -26,7 +26,7 @@
 			</ul> -->
 		</div>
 		<div id="right-panel">
-			<form id="searchForm">
+			<!-- <form id="searchForm">
 				<input
 					id="searchInput"
 					type="text"
@@ -36,17 +36,20 @@
 				<base-button type="submit"
 					><img id="searchIcon" src="../../assets/search.png" alt=""
 				/></base-button>
-			</form>
+			</form> -->
 			<lang-switcher />
 		</div>
 	</header>
 </template>
 
 <script>
-import BaseButton from "../UI/BaseButton.vue";
+// import BaseButton from "../UI/BaseButton.vue";
 import LangSwitcher from "../UI/LangSwitcher.vue";
 export default {
-	components: { LangSwitcher, BaseButton },
+	components: {
+		LangSwitcher,
+		// BaseButton
+	},
 };
 </script>
 

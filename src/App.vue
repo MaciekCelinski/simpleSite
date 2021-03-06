@@ -87,11 +87,8 @@
 		right: 30px;
 		z-index: 99;
 		font-size: 18px;
-		border: none;
-		outline: none;
 		background-color: red;
 		color: white;
-		cursor: pointer;
 		padding: 15px;
 		border-radius: 4px;
 	}
@@ -101,4 +98,5 @@
 		border-radius: 25px;
 		transition: all 0.3s ease;
 	}
+	
 </style>
